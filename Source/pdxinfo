@@ -1,0 +1,7 @@
+name=modplayersamplemo
+author=Didier Malenfant
+description=Simple demo for the Playdate module player.
+bundleID=net.malenfant.modplayersample
+version=0.2
+buildNumber=2
+imagePath=SystemAssets
