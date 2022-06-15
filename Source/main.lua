@@ -27,8 +27,6 @@
 
 import 'CoreLibs/graphics'
 
-import "toyboxes"
-
 local gfx <const> = playdate.graphics
 
 local setup_is_done = false

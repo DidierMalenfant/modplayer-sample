@@ -54,7 +54,7 @@ ULIBS =
 
 # -- Add our extensions and libraries
 include extension/extension.mk
-include Source/librairies/toyboxes.mk
+include toyboxes/toyboxes.mk
 
 # -- Include the common build rules
 include $(SDK)/C_API/buildsupport/common.mk
