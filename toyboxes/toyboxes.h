@@ -1,5 +1,5 @@
 #include "modplayer/modplayer.h"
-#include "pdutility/platform.h"
+#include "pdutility/pdutility.h"
 
-#define REGISTER_TOYBOX_EXTENSIONS	pd_init(playdate); \
-									registerModPlayer();
+#define REGISTER_TOYBOX_EXTENSIONS	register_pdutility(playdate); \
+									register_modplayer(playdate);

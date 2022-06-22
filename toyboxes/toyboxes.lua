@@ -1,1 +1,1 @@
-import 'DidierMalenfant/pdutility/Source/import'
+import 'DidierMalenfant/pdutility/pdutility'
