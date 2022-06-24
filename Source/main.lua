@@ -37,7 +37,6 @@ local player = nil
 
 local function setup()
     gfx.setColor(gfx.kColorWhite)
-
     gfx.setFont(gfx.getSystemFont())
 
     module = modplayer.module.new('Sounds/Crystal_Hammer.mod')
