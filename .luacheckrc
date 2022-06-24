@@ -24,9 +24,11 @@ stds.didiermalenfant_pdutility = {
                                 __index = {},
                                 super = { 
                                     fields = {
+                                        className = {},
                                         init = {},
                                     }
                                 },
+                                className = {},
                                 new = {},
                                 init = {},
                                 update = {},
@@ -70,9 +72,11 @@ stds.didiermalenfant_pdutility = {
                             fields = {
                                 super = { 
                                     fields = {
+                                        className = {},
                                         init = {},
                                     }
                                 },
+                                className = {},
                                 new = {},
                                 init = {},
                                 reset = {},                                
@@ -91,9 +95,11 @@ stds.didiermalenfant_pdutility = {
                                 super = { 
                                     read_only = false,
                                     fields = {
+                                        className = {},
                                         init = {},
                                     }
                                 },
+                                className = {},
                                 new = {},
                                 init = {},
                                 reset = {},                                
@@ -118,9 +124,11 @@ stds.didiermalenfant_pdutility = {
                             fields = {
                                 super = { 
                                     fields = {
+                                        className = {},
                                         init = {},
                                     }
                                 },
+                                className = {},
                                 new = {},
                                 init = {},
                                 draw = {},
@@ -136,9 +144,11 @@ stds.didiermalenfant_pdutility = {
                             fields = {
                                 super = { 
                                     fields = {
+                                        className = {},
                                         init = {},
                                     }
                                 },
+                                className = {},
                                 new = {},
                                 init = {},
                                 subscribe = {},
@@ -150,9 +160,11 @@ stds.didiermalenfant_pdutility = {
                             fields = {
                                 super = { 
                                     fields = {
+                                        className = {},
                                         init = {},
                                     }
                                 },
+                                className = {},
                                 new = {},
                                 init = {},
                                 __newindex = {},
