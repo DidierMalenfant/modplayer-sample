@@ -26,31 +26,31 @@
 --
 
 import 'CoreLibs/graphics'
+import "CoreLibs/object"
 
 import '../toyboxes/toyboxes.lua'
 
 local gfx <const> = playdate.graphics
 
-local module = nil
-local player = nil
+class("Main", { module = nil, player = nil }).extends()
 
-local function setup()
+function Main:init()
+    Main.super.init(self)
+
     gfx.setColor(gfx.kColorWhite)
     gfx.setFont(gfx.getSystemFont())
 
-    module = modplayer.module.new('Sounds/Crystal_Hammer.mod')
-    assert(module)
+    self.module = modplayer.module.new('Sounds/Crystal_Hammer.mod')
+    assert(self.module)
 
-    player = modplayer.player.new()
-    assert(player)
+    self.player = modplayer.player.new()
+    assert(self.player)
 
-    player:load(module)
-    player:play()
+    self.player:load(self.module)
+    self.player:play()
 end
 
-setup()
-
-function playdate.update()
+function Main:update()
     gfx.fillRect(0, 0, 400, 240)
 
     playdate.drawFPS(385,0)
@@ -71,5 +71,11 @@ function playdate.update()
         end
     end
 
-    player:update()
+    self.player:update()
+end
+
+local main = Main()
+
+function playdate.update()
+    main:update()
 end

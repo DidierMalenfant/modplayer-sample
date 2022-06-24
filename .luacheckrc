@@ -203,4 +203,20 @@ stds.didiermalenfant_modplayer = {
 
 std = "lua54+playdate+didiermalenfant_pdutility+didiermalenfant_modplayer"
 
+globals = {
+    Main = {
+        fields = {
+            super = { 
+                fields = {
+                    init = {},
+                    className = {},
+                }
+            },
+            className = {},
+            init = {},
+            update = {},
+        }
+    },
+}
+
 operators = {"+=", "-=", "*=", "/="}
