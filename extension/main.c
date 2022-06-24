@@ -32,7 +32,7 @@
 int eventHandler(PlaydateAPI* playdate, PDSystemEvent event, uint32_t arg)
 {
     if(event == kEventInitLua) {
-        REGISTER_TOYBOX_EXTENSIONS
+        REGISTER_TOYBOX_EXTENSIONS(playdate)
     }
     
     return 0;
