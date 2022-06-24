@@ -1,7 +1,5 @@
 --
---  modplayer - Amiga SoundTracker/ProTracker Module Player for Playdate.
---
---  Based on littlemodplayer by Matt Evans.
+--  modplayer-sample - Amiga SoundTracker/ProTracker Module Player for Playdate.
 --
 --  MIT License
 --  Copyright (c) 2022 Didier Malenfant.
