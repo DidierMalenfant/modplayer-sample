@@ -32,7 +32,6 @@ import '../toyboxes/toyboxes.lua'
 
 local gfx <const> = playdate.graphics
 
-local setup_is_done = false
 local module = nil
 local player = nil
 
@@ -49,15 +48,11 @@ local function setup()
 
     player:load(module)
     player:play()
-
-    setup_is_done = true
 end
 
-function playdate.update()
-    if not setup_is_done then
-        setup()
-    end
+setup()
 
+function playdate.update()
     gfx.fillRect(0, 0, 400, 240)
 
     playdate.drawFPS(385,0)
