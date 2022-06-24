@@ -27,7 +27,6 @@
 
 import 'CoreLibs/graphics'
 
--- luacheck: globals modplayer
 import '../toyboxes/toyboxes.lua'
 
 local gfx <const> = playdate.graphics
