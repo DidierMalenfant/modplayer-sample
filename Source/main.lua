@@ -23,14 +23,14 @@
 --  SOFTWARE.
 --
 
-import 'CoreLibs/graphics'
+import "CoreLibs/graphics"
 import "CoreLibs/object"
 
-import '../toyboxes/toyboxes.lua'
+import "../toyboxes/toyboxes.lua"
 
 local gfx <const> = playdate.graphics
 
-class("Main", { module = nil, player = nil }).extends()
+class('Main', { module = nil, player = nil }).extends()
 
 function Main:init()
     Main.super.init(self)
@@ -55,17 +55,17 @@ function Main:update()
 
     local stats = playdate.getStats()
     if (stats) then
-        local game_stats = stats["game"]
+        local game_stats = stats['game']
         if game_stats then
-            gfx.drawText(string.format("*Game %2.2f*", game_stats), 1, 1)
+            gfx.drawText(string.format('*Game %2.2f*', game_stats), 1, 1)
         end
-        local audio_stats = stats["audio"]
+        local audio_stats = stats['audio']
         if game_stats then
-            gfx.drawText(string.format("*Audio %2.2f*", audio_stats), 1, 21)
+            gfx.drawText(string.format('*Audio %2.2f*', audio_stats), 1, 21)
         end
-        local kernel_stats = stats["kernel"]
+        local kernel_stats = stats['kernel']
         if kernel_stats then
-            gfx.drawText(string.format("*Kernel %2.2f*", kernel_stats), 1, 41)
+            gfx.drawText(string.format('*Kernel %2.2f*', kernel_stats), 1, 41)
         end
     end
 
